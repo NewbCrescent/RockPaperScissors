@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: pink;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header p {
+    margin: 1em;
+}
+
+.mainDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainDiv p {
+    margin: 1em;
+    font-size: 3em;
+}
+
+.mainDiv img {
+    max-height: 50vh;
+
+    animation: cool 0.5s ease-in-out forwards;
+
+    position: relative;
+    transform: translate(-1000%, -1000%);
+
+}
+
+@keyframes cool {
+    100% {
+        transform: translate(0%, 0%);
+    }
+}
+
+.divDiv button {
+    width: 5rem;
+    margin: 2rem;
+}
